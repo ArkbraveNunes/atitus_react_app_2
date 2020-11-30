@@ -3,8 +3,6 @@
 #vs code
 /.vscode
 
-#firebase-config
-/src/database/FirebaseConfig.js
 
 # dependencies
 /node_modules
