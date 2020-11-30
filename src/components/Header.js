@@ -1,23 +1,39 @@
-import React from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import { Link } from 'react-router-dom'
-export default function Header() {
+import TypeAcessEnum from "../enums/type-access"
+
+export default function Header(props) {
+  const [headers, setterHeaders] = useState([]);
+
+  useLayoutEffect(() => {
+    defineHeaders();
+  }, []);
+
+    const defineHeaders = () => {
+        props.type === TypeAcessEnum.PUBLIC ? 
+        setterHeaders(
+                <>
+                <Link to='/tasks'>Tarefas</Link>
+                <Link to='/login'>Login</Link>
+                <Link to='/register'>Register</Link>
+                </>
+            ) :
+            setterHeaders(
+                <>
+                    <Link to='/home'>Home</Link>
+                    <Link to='/tasks/new'>Nova Tarefa</Link>
+                    <Link to='/logoff'>Logoff</Link>
+                </>
+            )        
+    }
+
     return(
         <header id='header'>
             <div className='inner'>
-                <Link to='/' className='logo'>
-                    <p className='navbar-brand logo_h'>
-                    </p>
-                </Link>
                 <nav id='nav'>
-                    <Link to='/'>HOME</Link>
-                    <Link to='/films'>FILMS</Link>
-                    <Link to='/starships'>STARSHIPS</Link>
-                    <Link to='/people'>PEOPLE</Link>
-                    <Link to='/planets'>PLANETS</Link>
-                    <Link to='/species'>SPECIES</Link>
-                    <Link to='/login'>LOGIN</Link>
+                    {headers}
                 </nav>
-                <a href='#navPanel' className='navPanelToggle'><span className='fa fa-bars'></span></a>
+                <a href='#nav' className='navPanelToggle'><span className='fa fa-bars'></span></a>
             </div>
         </header>
     )

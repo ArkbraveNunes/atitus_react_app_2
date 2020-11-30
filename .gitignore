@@ -1,5 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#vs code
+/.vscode
+
+#firebase-config
+/src/database/FirebaseConfig.js
+
 # dependencies
 /node_modules
 /.pnp

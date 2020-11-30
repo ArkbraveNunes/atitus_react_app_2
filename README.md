@@ -1,3 +1,28 @@
+Desenvolvedor: Jean Cláudio Nunes dos Santos
+
+Descrição da Aplicação:
+ - Gerenciador de Tarefas, onde pode-se cadastrar, deletar, editar e criar tarefas, dando a elas um título, descrição, prioridade (Alta, Média, Baixa), nomear um responsável a ela e definir um status inicial (Planejamento, Desenvolvimento, Em Teste, Em Homologação e Concluído);
+ - Desenvolvido levando como modelo a ferramenta Jira (https://www.atlassian.com/br/software/jira)
+
+Tecnologias Utilizadas:
+ - React
+ - Firebase
+
+Bibliotecas React Utilizadas:
+ - "@material-ui/core": "^4.11.1",
+ - "@testing-library/jest-dom": "^4.2.4",
+ - "@testing-library/react": "^9.5.0",
+ - "@testing-library/user-event": "^7.2.1",
+ - "axios": "^0.20.0",
+ - "bootstrap": "^4.5.3",
+ - "firebase": "^8.1.1",
+ - "react": "^16.13.1",
+ - "react-bootstrap": "^1.3.0",
+ - "react-dom": "^16.13.1",
+ - "react-icons": "^4.1.0",
+ - "react-router-dom": "^5.2.0",
+ - "react-scripts": "3.4.3"
+
 In the first execution: 
 
 ### `npm install`
