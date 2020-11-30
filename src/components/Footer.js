@@ -8,6 +8,9 @@ export default function Footer() {
                     <div className="copyright">
                         &copy; Desenvolvido na aula de Tópicos Especiais em Programação.
                     </div>
+                    <div>
+                        <p>Desenvolvido por Jean Nunes,<br/>Email: 1118046@imed.edu.br</p>
+                    </div>
                 </div>
             </div>
         </footer>
